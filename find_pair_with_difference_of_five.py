@@ -12,7 +12,7 @@ def find_pair_with_difference(target_diff: int, numbers: List) -> Optional[Tuple
     while right < len(numbers):
         current_diff = numbers[right] - numbers[left]
         if current_diff == target_diff:
-            print(f"Found match!")
+            print("Found match!")
             return (numbers[left], numbers[right])
         elif current_diff > target_diff:
             print(f"Current diff > 5: {current_diff}")
